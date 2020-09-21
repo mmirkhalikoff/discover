@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="rus">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Discaver Invest</title>
+    <link rel="stylesheet" href="./libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/modal/iziModal.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/page.css">
+    <link rel="stylesheet" href="styles/page-plan.css">
+    <link rel="stylesheet" href="styles/tablo.css">
+    <link rel="shurtcut icon" href="images/logo-Discover.png" type="image">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-Discover.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <div class="toggle-active">
+                    <p></p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li id="btn-menu-1"><a href="page.html">Этапы </a><span></span>
+                    </li>
+                    <li id="btn-menu-2"><a href="page-plan.html">План График</a>  <span></span>
+                    </li>
+                    <li id="btn-menu-3"><a href="tablo.html">Аналитика</a>  <span></span>
+                    </li>
+                    <li id="btn-menu-4"><a href="#">Склад</a>  <span></span>
+                    </li>
+                    <li id="btn-menu-5"><a href="#">Файлы</a>  <span></span>
+                    </li>
+                </ul>
+                <ul>
+                    <li id="btn-menu-6"><a href="#">Структура</a>  <span></span>
+                    </li>
+                    <li id="btn-menu-7"><a href="#">Администратор</a>  <span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </header>
+    <section class="page-plan">
+        <div class="container-fluid">
+            <div class="pages-plan">
+                <button class="tablink one" onclick='openPage("one",this,"rgb(216, 150, 7)")' id="defaultOpen">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar2-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+                        />
+                        <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z" />
+                        <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                    </svg>Календарный план График Проекта ЕРЦ</button>
+                <button class="tablink two" onclick='openPage("two",this,"rgb(216, 150, 7)")'>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-week" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                        <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"
+                        />
+                    </svg>График Платежей Проекта ЕРЦ</button>
+                <div id="one" class="tabcontent">
+                    <div class="one-inner">
+                        <button class="accordion">График Проекта ЕРЦ</button>
+                        <div class="panel">
+                            <div class="WordSection1">
+                                <table class="MsoNormalTable" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none">
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">СДР</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border:solid #b1bbcc 1pt;border-left:none;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">Название задачи</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border:solid #b1bbcc 1pt;border-left:none;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">Длительность</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border:solid #b1bbcc 1pt;border-left:none;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">Календа</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border:solid #b1bbcc 1pt;border-left:none;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">Начало</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border:solid #b1bbcc 1pt;border-left:none;background:#dfe3e8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#363636;background:#dfe3e8">Окончание</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">0</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">Discovery Invest</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">162 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">241</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">Пн 20.07.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#d8d8d8;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#d8d8d8">Чт 18.03.21</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">1</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">WMS. ЕРЦ.</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">162 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">241</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">Пн 20.07.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ccc1d9;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#ccc1d9">Чт 18.03.21</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">1.1</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">Начало работ по проекту</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">0 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">0</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">Пн 20.07.20</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#6f6;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#6f6">Пн 20.07.20</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.2</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1. Внедрение TopLog WMS</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">133 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">233</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Вт 28.07.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Ср 10.02.21</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.1</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 1. Обследование и разработка Технического проекта Системы, разработка раздела ТП об интеграции с внешними ИС Заказчика.</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">25 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">34</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Вт 28.07.20</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Пн 31.08.20</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.2</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 2. Настройка и конфигурирование, подготовка Администратора WMS, разработка интеграции с КИС, функциональное и интеграционное тестирование Системы, оформление пользовательской документации. Согласование мероприятий по подготовке и запуску WMS в ОЭ.</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">30 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">39</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#ff0;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000;background:#ff0">Пн 07.09.20</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Пт 16.10.20</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.3</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 3. КОМАНДИРОВКА НА ОБЪЕКТ. Проверка готовности склада к запуску. Подготовка ключевых пользователей Системы. Перевод остатков и миграция данных. Продуктивный запуск Системы в опытную эксплуатацию. Опытная эксплуатация (поддержка на объекте).</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">12 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">16</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">Пн 16.11.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Ср 02.12.20</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.4</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 4. Оформление проектной документации. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ОЭ. Передача Системы в промышленную эксплуатацию (ПЭ). Передача Системы на техническую поддержку.</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">22 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">41</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Ср 02.12.20</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Вт 12.01.21</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.5</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 5. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ПЭ.</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">22 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">30</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Вт 12.01.21</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Чт 11.02.21</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">1.2.6</span>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Этап 6. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ПЭ.</span>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">22 дней</span>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">35</span>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Чт 11.02.21</span>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><span style="font-size:10pt;color:#000">Чт 18.03.21</span>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.3</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">2. Поставка и настройка серверных компонентов, базового и платформенного ПО. Настройка 1С и SQL</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.4</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">3. Поставка технологического оборудования для WMS</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Пт 16.10.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">Пт 16.10.20</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.5</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">4. Проектирование, поставка, монтаж и настройка (ЛВС, БЛВС)</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.6</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">5. Администрирование и сопровождение ИТ-инфраструктуры</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">108 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">162</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Вт 01.09.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Ср 10.02.21</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">1.7</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">6. Разработка интерфейсов интеграции со стороны КИС</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">0</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#fff200">Пт 25.09.20</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="66" style="width:49.5pt;border:solid #b1bbcc 1pt;border-top:none;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="color:#000">1.8</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="804" style="width:603pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="color:#000;background:#fff200">Готовность стеллажей</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="120" style="width:90pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="color:#000">25 дней</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="102" style="width:76.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="color:#000">38</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="129" style="width:96.75pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#f2f2f2;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="font-size:10pt;color:#000;background:#f2f2f2">Пт 09.10.20</span></b>
+                                            </p>
+                                        </td>
+                                        <td width="138" style="width:103.5pt;border-top:none;border-left:none;border-bottom:solid #b1bbcc 1pt;border-right:solid #b1bbcc 1pt;background:#fff200;padding:.6pt .6pt .6pt .6pt">
+                                            <p class="MsoNormal" style="margin-bottom:0;line-height:normal"><b><span style="color:#000;background:#fff200">Пн 16.11.20</span></b>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="MsoNormal">&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="two" class="tabcontent">
+                    <div class="two-inner">
+                        <button class="accordion">График Платежей</button>
+                        <div class="panel">
+                            <div x:publishsource="Excel">
+                                <table cellpadding="0" cellspacing="0" width="1633" class="xl6431368" style="border-collapse:collapse;table-layout:fixed;width:98%">
+                                    <colgroup>
+                                        <col class="xl6731368" width="37" style="width:10pt">
+                                            <col class="xl6431368" width="253" style="width:65pt">
+                                                <col class="xl6431368" width="217" style="width:65pt">
+                                                    <col class="xl6431368" width="129" style="width:20pt">
+                                                        <col class="xl6431368" width="134" style="width:20pt">
+                                                            <col class="xl6431368" width="86" style="width:20pt">
+                                                                <col class="xl6431368" width="112" style="width:20pt">
+                                                                    <col class="xl6431368" width="70" style="width:20pt">
+                                                                        <col class="xl6431368" width="135" style="width:20pt">
+                                                                            <col class="xl6431368" width="134" style="width:20pt">
+                                                                                <col class="xl6431368" width="174" style="width:20pt">
+                                                                                    <col class="xl6431368" width="152" style="width:20pt">
+                                                                                        <tr height="70" style="height:52.5pt">
+                                                                                            <td height="70" class="xl7931368" width="37" style="height:52.5pt;width:28pt">№</td>
+                                                                                            <td class="xl6331368" width="253" style="border-left:none;width:190pt">№TSL/PR-103
+                                                                                                <br>на внедрение информационной системы управления складом</td>
+                                                                                            <td class="xl7131368" width="217" style="border-left:none;width:163pt">Наименование и условия проведения платежа Заказчиком №TS/R-101</td>
+                                                                                            <td class="xl7131368" width="129" style="border-left:none;width:97pt">Эскизная дата<span></span>
+                                                                                            </td>
+                                                                                            <td class="xl7131368" width="134" style="border-left:none;width:101pt">Дата платежа,<span> </span>количество раб. дней, прошедших
+                                                                                                <br>с даты начала проекта</td>
+                                                                                            <td class="xl7131368" width="86" style="border-left:none;width:65pt">Длительность Этапа, раб. дней</td>
+                                                                                            <td class="xl7231368" width="112" style="border-left:none;width:84pt">Стоимость Этапа, USD. НДС не облагается</td>
+                                                                                            <td class="xl7131368" width="70" style="border-left:none;width:53pt">Сумма платежа, USD. НДС не облагается</td>
+                                                                                            <td class="xl7831368" width="135" style="border-left:none;width:101pt">TSL/LD-102 - Лицензионный договор, USD</td>
+                                                                                            <td class="xl7831368" width="134" style="border-left:none;width:101pt">Гарантийная и абонентская ТП на протяжении 6 мес.</td>
+                                                                                            <td class="xl7831368" width="174" style="border-left:none;width:131pt">ДОГОВОР №TSL/ТР-104<span> </span>- Заявка 1. Первоначальная настройка сервера WMS (1C, СУБД), USD</td>
+                                                                                            <td class="xl7831368" width="152" style="border-left:none;width:114pt">ДОГОВОР №TSL/ТР-104<span> </span>- Заявка 2. Абонентское ТП сервера WMS (1C, СУБД), USD</td>
+                                                                                        </tr>
+                                                                                        <tr height="30" style="height:22.5pt">
+                                                                                            <td height="30" class="xl8031368" width="37" style="height:22.5pt;border-top:none;width:28pt">1</td>
+                                                                                            <td class="xl6531368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl6531368" width="217" style="border-top:none;border-left:none;width:163pt">&nbsp;</td>
+                                                                                            <td class="xl6531368" width="129" style="border-top:none;border-left:none;width:97pt">&nbsp;</td>
+                                                                                            <td class="xl6831368" width="134" style="border-top:none;border-left:none;width:101pt">0</td>
+                                                                                            <td class="xl6531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7731368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7731368" width="70" style="border-top:none;border-left:none;width:53pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="86" style="height:64.5pt">
+                                                                                            <td height="86" class="xl8131368" width="37" style="height:64.5pt;border-top:none;width:28pt">1.1.</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 1. Обследование и разработка Технического проекта Системы, разработка раздела ТП об интеграции с внешними ИС Заказчика.</td>
+                                                                                            <td class="xl7031368" width="217"
+                                                                                            style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 1. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 1<span> </span>в течение 5 (пяти) банковских дней с даты подписания Сторонами настоящего<span> </span>Договора</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">03.07.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">0</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">25</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">27740</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">13870</td>
+                                                                                            <td class="xl7631368" width="135" style="border-top:none;border-left:none;width:101pt">18590</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">2873</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="95" style="height:71.25pt">
+                                                                                            <td height="95" class="xl8131368" width="37" style="height:71.25pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 2. </font><font class="font631368"><br>Итоговый платеж по Этапу<span> </span>в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 1</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">06.08.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">25</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">13870</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="95" style="height:71.25pt">
+                                                                                            <td height="95" class="xl8131368" width="37" style="height:71.25pt;border-top:none;width:28pt">1.2.</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 2. Настройка и конфигурирование, подготовка Администратора WMS, разработка интеграции с КИС, функциональное и интеграционное тестирование Системы, оформление
+                                                                                                пользовательской документации. Согласование мероприятий по подготовке и запуску WMS в ОЭ.<span></span>
+                                                                                            </td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 3. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 2 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 1</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">06.08.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">25</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">30</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">31742</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">15871</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="98" style="height:73.5pt">
+                                                                                            <td height="98" class="xl8131368" width="37" style="height:73.5pt;border-top:none;width:28pt">1.3</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 4. </font><font class="font631368"><br>Итоговый платеж по Этапу 2<span> </span>в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 2</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">17.09.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">55</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">15871</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="122" style="height:91.5pt">
+                                                                                            <td height="122" class="xl8231368" width="37" style="height:91.5pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 3. РАБОТЫ НА ОБЪЕКТЕ. Проверка готовности склада к запуску. Подготовка ключевых пользователей Системы.
+                                                                                                <br>Консультационная поддержка на этапе тестового запуска Системы.<span></span>
+                                                                                                <br>Консультационная поддержка на этапе продуктивного запуска Системы в опытную эксплуатацию.<span></span>
+                                                                                            </td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 5. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 3 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 2</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">17.09.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">55</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">12</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">20000</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">10000</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="101" style="height:75.75pt">
+                                                                                            <td height="101" class="xl8231368" width="37" style="height:75.75pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 6. </font><font class="font631368"><br>Итоговый платеж по Этапу<span> </span>в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 3</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">05.10.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">67</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">10000</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="108" style="height:81pt">
+                                                                                            <td height="108" class="xl8231368" width="37" style="height:81pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 4. Оформление проектной документации. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ОЭ. Передача Системы в промышленную эксплуатацию
+                                                                                                (ПЭ). Передача Системы на техническую поддержку.</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 7. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 4 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 3</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">05.10.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">67</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">22</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">10588</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">2070</td>
+                                                                                        </tr>
+                                                                                        <tr height="102" style="height:76.5pt">
+                                                                                            <td height="102" class="xl8231368" width="37" style="height:76.5pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 8. </font><font class="font631368"><br>Итоговый платеж по Этапу 4<span> </span>в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 4</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">06.11.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">89</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="98" style="height:73.5pt">
+                                                                                            <td height="98" class="xl8231368" width="37" style="height:73.5pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 5. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ПЭ.</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 9. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 5 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 4</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">06.11.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">89</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">22</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">10588</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="104" style="height:78pt">
+                                                                                            <td height="104" class="xl8231368" width="37" style="height:78pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 10. </font><font class="font631368"><br>Итоговый платеж по Этапу<span> </span>5 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 5</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">08.12.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">111</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="101" style="height:75.75pt">
+                                                                                            <td height="101" class="xl8231368" width="37" style="height:75.75pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">Этап 6. Удаленная поддержка Администраторов Системы со стороны Заказчика на этапе ПЭ.</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 11. </font><font class="font631368"><br>Оплата аванса 50% от стоимости Этапа 6 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 5</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">08.12.2020</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">111</td>
+                                                                                            <td class="xl7531368" align="right" width="86" style="border-top:none;border-left:none;width:65pt">22</td>
+                                                                                            <td class="xl7631368" width="112" style="border-top:none;border-left:none;width:84pt">10588</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="99" style="height:74.25pt">
+                                                                                            <td height="99" class="xl8231368" width="37" style="height:74.25pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt"><font class="font531368">Платеж 12. </font><font class="font631368"><br>Итоговый платеж по Этапу<span> </span>6 в течение 5 (пяти) банковский дней с даты подписания Сторонами<br></font>
+                                                                                                <font
+                                                                                                class="font531368">Акта сдачи-приемки работ за<span> </span>Этап 6</font><font class="font631368"><br>Работ по настоящему Договору</font>
+                                                                                            </td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">18.01.2021</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">133</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">5294</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">&nbsp;</td>
+                                                                                        </tr>
+                                                                                        <tr height="99" style="height:74.25pt">
+                                                                                            <td height="99" class="xl8231368" width="37" style="height:74.25pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt">&nbsp;</td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">18.01.2021</td>
+                                                                                            <td class="xl6631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">2070</td>
+                                                                                        </tr>
+                                                                                        <tr height="99" style="height:74.25pt">
+                                                                                            <td height="99" class="xl8231368" width="37" style="height:74.25pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl6931368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl7031368" width="217" style="border-top:none;border-left:none;width:163pt">&nbsp;</td>
+                                                                                            <td class="xl8831368" align="right" width="129" style="border-top:none;border-left:none;width:97pt">18.04.2021</td>
+                                                                                            <td class="xl6631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">264</td>
+                                                                                            <td class="xl7531368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="112" style="border-top:none;border-left:none;width:84pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="70" style="border-top:none;border-left:none;width:53pt">&nbsp;</td>
+                                                                                            <td class="xl7431368" width="135" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="134" style="border-top:none;border-left:none;width:101pt">0</td>
+                                                                                            <td class="xl7631368" width="174" style="border-top:none;border-left:none;width:131pt">&nbsp;</td>
+                                                                                            <td class="xl7631368" width="152" style="border-top:none;border-left:none;width:114pt">2070</td>
+                                                                                        </tr>
+                                                                                        <tr class="xl8731368" height="17" style="height:12.75pt">
+                                                                                            <td height="17" class="xl8331368" width="37" style="height:12.75pt;border-top:none;width:28pt">&nbsp;</td>
+                                                                                            <td class="xl8431368" width="253" style="border-top:none;border-left:none;width:190pt">&nbsp;</td>
+                                                                                            <td class="xl8431368" width="217" style="border-top:none;border-left:none;width:163pt">&nbsp;</td>
+                                                                                            <td class="xl8431368" width="129" style="border-top:none;border-left:none;width:97pt">&nbsp;</td>
+                                                                                            <td class="xl8531368" width="134" style="border-top:none;border-left:none;width:101pt">&nbsp;</td>
+                                                                                            <td class="xl8631368" width="86" style="border-top:none;border-left:none;width:65pt">&nbsp;</td>
+                                                                                            <td class="xl8631368" align="right" width="112" style="border-top:none;border-left:none;width:84pt">111246</td>
+                                                                                            <td class="xl8631368" width="70" style="border-top:none;border-left:none;width:53pt">&nbsp;</td>
+                                                                                            <td class="xl8631368" align="right" width="135" style="border-top:none;border-left:none;width:101pt">18590</td>
+                                                                                            <td class="xl8631368" align="right" width="134" style="border-top:none;border-left:none;width:101pt">0</td>
+                                                                                            <td class="xl8631368" align="right" width="174" style="border-top:none;border-left:none;width:131pt">2873</td>
+                                                                                            <td class="xl8631368" align="right" width="152" style="border-top:none;border-left:none;width:114pt">6210</td>
+                                                                                        </tr>
+                                                                                        <tr height="15" style="height:11.25pt">
+                                                                                            <td height="15" class="xl6731368" width="37" style="height:11.25pt;width:28pt"></td>
+                                                                                            <td class="xl6431368" width="253" style="width:190pt"></td>
+                                                                                            <td class="xl6431368" width="217" style="width:163pt"></td>
+                                                                                            <td class="xl6431368" width="129" style="width:97pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="86" style="width:65pt"></td>
+                                                                                            <td class="xl6431368" width="112" style="width:84pt"></td>
+                                                                                            <td class="xl6431368" width="70" style="width:53pt"></td>
+                                                                                            <td class="xl6431368" width="135" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="174" style="width:131pt"></td>
+                                                                                            <td class="xl6431368" width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <tr height="15" style="height:11.25pt">
+                                                                                            <td height="15" class="xl6731368" width="37" style="height:11.25pt;width:28pt"></td>
+                                                                                            <td class="xl6431368" width="253" style="width:190pt"></td>
+                                                                                            <td class="xl6431368" width="217" style="width:163pt"></td>
+                                                                                            <td class="xl6431368" width="129" style="width:97pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="86" style="width:65pt"></td>
+                                                                                            <td class="xl8931368" width="112" style="width:84pt"></td>
+                                                                                            <td class="xl9031368" width="70" style="width:53pt"></td>
+                                                                                            <td class="xl6431368" width="135" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="174" style="width:131pt"></td>
+                                                                                            <td class="xl6431368" width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <tr height="15" style="height:11.25pt">
+                                                                                            <td height="15" class="xl6731368" width="37" style="height:11.25pt;width:28pt"></td>
+                                                                                            <td class="xl6431368" width="253" style="width:190pt"></td>
+                                                                                            <td class="xl6431368" width="217" style="width:163pt"></td>
+                                                                                            <td class="xl6431368" width="129" style="width:97pt"></td>
+                                                                                            <td class="xl7331368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="86" style="width:65pt"></td>
+                                                                                            <td class="xl8931368" width="112" style="width:84pt"></td>
+                                                                                            <td class="xl6431368" width="70" style="width:53pt"></td>
+                                                                                            <td class="xl6431368" width="135" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="174" style="width:131pt"></td>
+                                                                                            <td class="xl6431368" width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <tr height="15" style="height:11.25pt">
+                                                                                            <td height="15" class="xl6731368" width="37" style="height:11.25pt;width:28pt"></td>
+                                                                                            <td class="xl6431368" width="253" style="width:190pt"></td>
+                                                                                            <td class="xl6431368" width="217" style="width:163pt"></td>
+                                                                                            <td class="xl6431368" width="129" style="width:97pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="86" style="width:65pt"></td>
+                                                                                            <td class="xl6431368" width="112" style="width:84pt"></td>
+                                                                                            <td class="xl6431368" width="70" style="width:53pt"></td>
+                                                                                            <td class="xl6431368" width="135" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="174" style="width:131pt"></td>
+                                                                                            <td class="xl6431368" width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <tr height="15" style="height:11.25pt">
+                                                                                            <td height="15" class="xl6731368" width="37" style="height:11.25pt;width:28pt"></td>
+                                                                                            <td class="xl6431368" width="253" style="width:190pt"></td>
+                                                                                            <td class="xl6431368" width="217" style="width:163pt"></td>
+                                                                                            <td class="xl6431368" width="129" style="width:97pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="86" style="width:65pt"></td>
+                                                                                            <td class="xl8931368" width="112" style="width:84pt"></td>
+                                                                                            <td class="xl6431368" width="70" style="width:53pt"></td>
+                                                                                            <td class="xl6431368" width="135" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="134" style="width:101pt"></td>
+                                                                                            <td class="xl6431368" width="174" style="width:131pt"></td>
+                                                                                            <td class="xl6431368" width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <![if supportMisalignedColumns]>
+                                                                                        <tr height="0" style="display:none">
+                                                                                            <td width="37" style="width:28pt"></td>
+                                                                                            <td width="253" style="width:190pt"></td>
+                                                                                            <td width="217" style="width:163pt"></td>
+                                                                                            <td width="129" style="width:97pt"></td>
+                                                                                            <td width="134" style="width:101pt"></td>
+                                                                                            <td width="86" style="width:65pt"></td>
+                                                                                            <td width="112" style="width:84pt"></td>
+                                                                                            <td width="70" style="width:53pt"></td>
+                                                                                            <td width="135" style="width:101pt"></td>
+                                                                                            <td width="134" style="width:101pt"></td>
+                                                                                            <td width="174" style="width:131pt"></td>
+                                                                                            <td width="152" style="width:114pt"></td>
+                                                                                        </tr>
+                                                                                        <![endif]>
+                                    </colgroup>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer"></footer>
+    <script src="./libs/jquery/jquery.min.js"></script>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/owl/owl.carousel.min.js"></script>
+    <script src="libs/modal/iziModal.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/active-btn.js"></script>
+</body>
+
+</html>
