@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+* {
+  border: 0px solid red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(243, 236, 236, 0.568);
+}
+
+header {
+  background-color: #505b68;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1055px) {
+  header .container-fluid.active {
+    height: 100%;
+  }
+}
+
+header .container-fluid {
+  background-color: #505b68;
+  position: fixed;
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+header .container-fluid .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  float: left;
+  margin-bottom: -25px;
+}
+
+header .container-fluid .logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .container-fluid .logo a img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1055px) {
+  header .container-fluid .logo {
+    margin-left: 25px;
+  }
+}
+
+header .container-fluid .menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1055px) {
+  header .container-fluid .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    margin-right: 25px;
+    height: 55px;
+    float: right;
+    z-index: 1;
+  }
+  header .container-fluid .menu-toggle .toggle-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 28px;
+  }
+  header .container-fluid .menu-toggle .toggle-active p {
+    transition: .6s ease;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 30px;
+    margin-bottom: 9px;
+  }
+  header .container-fluid .menu-toggle .toggle-active p::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: .6s ease;
+    border-radius: 30px;
+    margin-top: -11px;
+  }
+  header .container-fluid .menu-toggle .toggle-active.active p {
+    transition: .6s ease;
+    transform: rotate(45deg);
+    margin: 0;
+  }
+  header .container-fluid .menu-toggle .toggle-active.active p::before {
+    transition: .6s ease;
+    transform: rotate(-91deg);
+    margin: 0;
+  }
+  header .container-fluid .menu {
+    display: none;
+  }
+  header .container-fluid .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    float: right;
+    background-color: #505b68;
+    width: 100%;
+    height: 100%;
+    margin: 60px 0 0 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  header .container-fluid .menu.active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  header .container-fluid .menu.active ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  header .container-fluid .menu.active ul li a {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+  header .container-fluid .menu.active ul li:hover span,
+  header .container-fluid .menu.active ul #btn-menu-1.active span,
+  header .container-fluid .menu.active ul #btn-menu-2.active span,
+  header .container-fluid .menu.active ul #btn-menu-3.active span,
+  header .container-fluid .menu.active ul #btn-menu-4.active span,
+  header .container-fluid .menu.active ul #btn-menu-5.active span,
+  header .container-fluid .menu.active ul #btn-menu-6.active span,
+  header .container-fluid .menu.active ul #btn-menu-7.active span {
+    background-color: #e0a503;
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 3px;
+    animation: menuline .6s ease-out;
+  }
+  @keyframes menuline {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+  }
+  header .container-fluid .menu.active ul:nth-child(1) {
+    display: flex;
+    width: 100%;
+  }
+  header .container-fluid .menu.active ul:nth-child(1) li {
+    margin: 15px 0px 0;
+  }
+  header .container-fluid .menu.active ul:nth-child(2) {
+    display: flex;
+    width: 100%;
+  }
+  header .container-fluid .menu.active ul:nth-child(2) li {
+    margin: 15px 0px 0;
+  }
+  header .container-fluid .menu.active ul:nth-child(2) li a {
+    margin-right: 6px;
+  }
+}
+
+@media only screen and (min-width: 1055px) {
+  header .container-fluid .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+    width: 92%;
+    margin: 0;
+  }
+  header .container-fluid .menu ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+  header .container-fluid .menu ul li a {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+  }
+  header .container-fluid .menu ul li:hover span,
+  header .container-fluid .menu ul #btn-menu-1.active span,
+  header .container-fluid .menu ul #btn-menu-2.active span,
+  header .container-fluid .menu ul #btn-menu-3.active span,
+  header .container-fluid .menu ul #btn-menu-4.active span,
+  header .container-fluid .menu ul #btn-menu-5.active span,
+  header .container-fluid .menu ul #btn-menu-6.active span,
+  header .container-fluid .menu ul #btn-menu-7.active span {
+    background-color: #e0a503;
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 3px;
+    animation: menuline .6s ease-out;
+  }
+  @keyframes menuline {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+  }
+  header .container-fluid .menu ul:nth-child(1) {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+  header .container-fluid .menu ul:nth-child(1) li {
+    margin: 0 16px 0;
+  }
+  header .container-fluid .menu ul:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+  }
+  header .container-fluid .menu ul:nth-child(2) li {
+    margin: 0 16px 0;
+  }
+  header .container-fluid .menu ul:nth-child(2) li a {
+    margin-right: 6px;
+  }
+}
+
+header .container-fluid .clearfix {
+  clear: both;
+}
+
+.section-home {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.section-home video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-home .text {
+  width: 45%;
+  height: 11%;
+  background-color: rgba(0, 0, 0, 0.7);
+  right: 0;
+  bottom: 150px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.section-home .text .icon {
+  font-size: 60px;
+  color: #e0a503;
+  margin: 0 15px 0 0;
+}
+
+.section-home .text .inner-text {
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  color: #fff;
+}
+
+.section-home .text .inner-text span {
+  font-family: 'Dosis', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 0 0 0 10px;
+  color: #e0a503;
+}
+
+@media only screen and (max-width: 1600px) {
+  .section-home .text {
+    width: 40%;
+  }
+  .section-home .text .icon {
+    font-size: 40px;
+  }
+  .section-home .text .inner-text {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 28px;
+    margin-left: 0px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .section-home .text {
+    width: 40%;
+  }
+  .section-home .text .icon {
+    font-size: 45px;
+  }
+  .section-home .text .inner-text {
+    font-size: 25px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 30px;
+    margin-left: 0px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .section-home .text {
+    width: 40%;
+    height: 8%;
+  }
+  .section-home .text .icon {
+    font-size: 40px;
+  }
+  .section-home .text .inner-text {
+    font-size: 20px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 25px;
+    margin-left: 0px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  .section-home .text {
+    width: 40%;
+    height: 8%;
+  }
+  .section-home .text .icon {
+    font-size: 35px;
+  }
+  .section-home .text .inner-text {
+    font-size: 16px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 20px;
+    margin-left: 0px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 894px) {
+  .section-home .text {
+    width: 40%;
+    height: 8%;
+  }
+  .section-home .text .icon {
+    font-size: 30px;
+  }
+  .section-home .text .inner-text {
+    font-size: 14px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 17px;
+    margin-left: 0px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .section-home .text {
+    width: 40%;
+    height: 8%;
+    padding: 30px;
+  }
+  .section-home .text .icon {
+    font-size: 25px;
+  }
+  .section-home .text .inner-text {
+    font-size: 13px;
+  }
+  .section-home .text .inner-text span {
+    font-size: 15px;
+    margin-left: 0px;
+    line-height: 20px;
+  }
+}
+
+.bg-video:before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}

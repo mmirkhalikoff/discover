@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+* {
+  border: 0px solid red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ecf0f5;
+}
+
+.page-plan {
+  padding-top: 140px;
+  height: 100%;
+}
+
+.page-plan .container-fluid {
+  height: 100%;
+}
+
+.page-plan .container-fluid .pages-plan {
+  width: 100%;
+  height: 100%;
+}
+
+.page-plan .container-fluid .pages-plan .tablink {
+  background-color: #505b68;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  width: 40%;
+  height: 45px;
+}
+
+.page-plan .container-fluid .pages-plan .one {
+  border-radius: 8px 0 0 0;
+}
+
+.page-plan .container-fluid .pages-plan .one, .page-plan .container-fluid .pages-plan .two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.page-plan .container-fluid .pages-plan .one svg, .page-plan .container-fluid .pages-plan .two svg {
+  color: #fff;
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.page-plan .container-fluid .pages-plan .tablink:hover {
+  background-color: #777;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  display: none;
+  padding: 100px 0;
+  height: 100%;
+  width: 99.4%;
+  border-radius: 8px 8px 3px 3px;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner {
+  width: 91%;
+  margin: 0 5%;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .accordion,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .accordion {
+  background-color: #505b68;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 10px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 18px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .active, .page-plan .container-fluid .pages-plan .tabcontent .one-inner .accordion:hover,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .active,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .accordion:hover {
+  background-color: #d89607;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .accordion:after,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .active:after,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .active:after {
+  content: "\2212";
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 0 25px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel p.MsoNormal, .page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel li.MsoNormal, .page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel div.MsoNormal,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel p.MsoNormal,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel li.MsoNormal,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel div.MsoNormal {
+  margin-top: 0cm;
+  margin-right: 0cm;
+  margin-bottom: 8.0pt;
+  margin-left: 0cm;
+  line-height: 107%;
+  font-size: 11.0pt;
+  font-family: "Calibri",sans-serif;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .MsoChpDefault,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .MsoChpDefault {
+  font-family: "Calibri",sans-serif;
+  line-height: 107%;
+}
+
+@page WordSection1 {
+  .page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel,
+  .page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel {
+    size: 595.3pt 841.9pt;
+    margin: 2.0cm 42.5pt 2.0cm 3.0cm;
+  }
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .font531368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .font531368 {
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .font631368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .font631368 {
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6331368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6331368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6431368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6431368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6531368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6531368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: #F2F2F2;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6631368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6631368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: general;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6731368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6731368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6831368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6831368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: right;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: #F2F2F2;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl6931368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl6931368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7031368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7031368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: general;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7131368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7131368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7231368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7231368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7331368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7331368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7431368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7431368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7531368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7531368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: general;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7631368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7631368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: right;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7731368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7731368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: #F2F2F2;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7831368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7831368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: black;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl7931368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl7931368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8031368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8031368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: #F2F2F2;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8131368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8131368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8231368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8231368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8331368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8331368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 10.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8431368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8431368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 10.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8531368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8531368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 10.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: right;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8631368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8631368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 10.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: general;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8731368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8731368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 10.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8831368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8831368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: general;
+  vertical-align: top;
+  border: .5pt solid windowtext;
+  background: white;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl8931368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl8931368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: right;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan .tabcontent .one-inner .panel .xl9031368,
+.page-plan .container-fluid .pages-plan .tabcontent .two-inner .panel .xl9031368 {
+  padding-top: 1px;
+  padding-right: 1px;
+  padding-left: 1px;
+  color: windowtext;
+  font-size: 8.0pt;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  font-family: Calibri, sans-serif;
+  text-align: right;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.page-plan .container-fluid .pages-plan #one, .page-plan .container-fluid .pages-plan #two {
+  background-color: #fff;
+}
